@@ -1,0 +1,18 @@
+{
+  "name": "vitepress-theme-december",
+  "version": "0.0.1",
+  "description": "theme",
+  "main": "index.js",
+  "repository": "https://github.com/yaoyaoio/vitepress-theme-december.git",
+  "author": "yaoyao <i@yaoyao.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.29",
+    "vue": "^3.2.45"
+  },
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  }
+}
