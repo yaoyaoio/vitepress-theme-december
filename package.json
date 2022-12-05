@@ -7,6 +7,11 @@
   "author": "yaoyao <i@yaoyao.io>",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^18.11.10",
+    "fast-glob": "^3.2.12",
+    "fs-extra": "^10.0.0",
+    "@mdit-vue/plugin-frontmatter": "^0.11.1",
+    "@types/fs-extra": "^9.0.13",
     "vitepress": "^1.0.0-alpha.29",
     "vue": "^3.2.45"
   },
