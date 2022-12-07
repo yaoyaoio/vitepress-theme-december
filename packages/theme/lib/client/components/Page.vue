@@ -17,7 +17,7 @@
 
 <script lang="ts" setup>
 import {withBase} from 'vitepress'
-import {type PostData} from "../shared";
+import {type PostData} from "../../../src/types/post";
 
 const props = defineProps<{
   posts: PostData[],

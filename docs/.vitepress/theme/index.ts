@@ -1,3 +1,3 @@
-import Theme from "../../../packages/theme";
+import {DecemberTheme} from "vitepress-theme-december";
 
-export default Theme;
+export default DecemberTheme

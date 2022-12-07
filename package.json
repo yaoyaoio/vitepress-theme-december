@@ -1,22 +1,21 @@
 {
-  "name": "vitepress-theme-december",
+  "name": "docs",
   "version": "0.0.1",
-  "description": "vitepress-theme-december",
+  "private": true,
+  "description": "docs",
   "main": "index.js",
   "repository": "https://github.com/yaoyaoio/vitepress-theme-december.git",
   "author": "yaoyao <i@yaoyao.io>",
-  "keywords": [
-    "theme",
-    "vitepress"
-  ],
   "license": "MIT",
   "devDependencies": {
+    "@mdit-vue/plugin-frontmatter": "^0.11.1",
+    "@types/fs-extra": "^9.0.13",
     "@types/node": "^18.11.10",
     "fast-glob": "^3.2.12",
     "fs-extra": "^10.0.0",
-    "@mdit-vue/plugin-frontmatter": "^0.11.1",
-    "@types/fs-extra": "^9.0.13",
-    "vitepress": "^1.0.0-alpha.29",
+    "tsconfig-vuepress": "^4.0.4",
+    "vitepress-theme-december": "workspace:*",
+    "vitepress": "^1.0.0-alpha.30",
     "vue": "^3.2.45"
   },
   "scripts": {
@@ -24,9 +23,7 @@
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs"
   },
-  "homepage": "https://github.com/yaoyaoio/vitepress-theme-december#readme",
-  "bugs": "https://github.com/yaoyaoio/vitepress-theme-december/issues",
-  "files": [
-    "packages/theme"
+  "workspaces": [
+    "./packages/*"
   ]
 }

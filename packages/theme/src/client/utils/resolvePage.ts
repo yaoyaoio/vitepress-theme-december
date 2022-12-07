@@ -1,4 +1,4 @@
-import {PostData} from "./shared/";
+import type {PostData} from "../../types/post";
 
 
 export const formateDateString = (date: string): string => {
@@ -25,10 +25,18 @@ export const resolveDate = (date: string, type: "year" | "month" | "day") => {
   return info[type].toString();
 };
 
+export interface PostDataWithDate {
+  date: string;
+  data: PostData[];
+}
 
-export function getPostsByYear(posts: PostData[]) {
-  const formatPages = {};
-  const formatPagesArr = [];
+export const getPostsByYear = (posts: PostData[]) => {
+  const formatPages = {} as Record<string, PostData>;
+  const formatPagesArr = [] as Array<{
+    year: string;
+    data: PostData[];
+  }>;
+
   for (const post of posts) {
     if (post.frontmatter.date) {
       const pageDateYear = resolveDate(post.frontmatter.date, "year");
@@ -43,31 +51,12 @@ export function getPostsByYear(posts: PostData[]) {
     }
     for (const key in formatPages) {
       formatPagesArr.unshift({
+        // @ts-ignore
         year: key,
         // @ts-ignore
         data: formatPages[key]
       });
     }
-    return formatPagesArr;
   }
-}
-
-
-export function initTags(post: PostData[]) {
-  const data: any = {}
-  for (let index = 0; index < post.length; index++) {
-    const element = post[index]
-    const tags = element.frontmatter.tags
-    if (tags) {
-      tags.forEach((item) => {
-        if (data[item]) {
-          data[item].push(element)
-        } else {
-          data[item] = []
-          data[item].push(element)
-        }
-      })
-    }
-  }
-  return data
+  return formatPagesArr;
 }

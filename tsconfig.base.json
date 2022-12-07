@@ -1,0 +1,20 @@
+{
+  "extends": "tsconfig-vuepress/base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "noEmitOnError": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "target": "ESNext"
+  }
+}

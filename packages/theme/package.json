@@ -1,0 +1,51 @@
+{
+  "name": "vitepress-theme-december",
+  "version": "0.1.8",
+  "type": "module",
+  "description": "vitepress-theme-december",
+  "repository": "https://github.com/yaoyaoio/vitepress-theme-december.git",
+  "author": "yaoyao <i@yaoyao.io>",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": "./lib/index.js"
+  },
+  "keywords": [
+    "theme",
+    "vue",
+    "vite",
+    "vitepress"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "clean": "rimraf lib *.tsbuildinfo",
+    "copy": "cpx \"src/**/*.{d.ts,vue,css}\" lib"
+  },
+  "homepage": "https://github.com/yaoyaoio/vitepress-theme-december#readme",
+  "bugs": "https://github.com/yaoyaoio/vitepress-theme-december/issues",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@mdit-vue/plugin-frontmatter": "^0.11.1",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.11.10",
+    "cpx": "^1.5.0",
+    "fast-glob": "^3.2.12",
+    "fs-extra": "^10.0.0",
+    "rimraf": "^3.0.2",
+    "vitepress": "^1.0.0-alpha.29",
+    "vue": "^3.2.45"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  }
+}

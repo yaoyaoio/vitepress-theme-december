@@ -16,8 +16,8 @@
 </template>
 
 <script lang="ts" setup>
-import {usePosts} from "../composables/post";
-import {getPostsByYear} from "../resolve";
+import {usePosts} from "../../../src/client/composables";
+import {getPostsByYear} from "../../../src/client/utils";
 import {computed} from "vue";
 import {withBase} from "vitepress";
 
