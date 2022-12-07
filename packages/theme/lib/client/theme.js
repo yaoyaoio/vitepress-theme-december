@@ -1,8 +1,8 @@
 import DefaultTheme from 'vitepress/theme';
-import Layout from '../../lib/client/components/Layout.vue';
-import Archives from "../../lib/client/components/Archives.vue";
-import Home from "../../lib/client/components/Home.vue";
-import '../../lib/client/styles/custom.css';
+import Layout from './components/Layout.vue';
+import Archives from "./components/Archives.vue";
+import Home from "./components/Home.vue";
+import './styles/custom.css';
 import { setPosts } from "./composables";
 function setupPosts(ctx) {
     const posts = ctx.siteData.value.themeConfig.posts;

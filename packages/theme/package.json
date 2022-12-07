@@ -1,6 +1,6 @@
 {
-  "name": "vitepress-theme-december",
-  "version": "0.1.8",
+  "name": "vitepress-theme-december-next",
+  "version": "1.0.0",
   "type": "module",
   "description": "vitepress-theme-december",
   "repository": "https://github.com/yaoyaoio/vitepress-theme-december.git",
@@ -18,14 +18,14 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "tsc -b tsconfig.build.json",
+    "build": "tsc",
     "clean": "rimraf lib *.tsbuildinfo",
     "copy": "cpx \"src/**/*.{d.ts,vue,css}\" lib"
   },
   "homepage": "https://github.com/yaoyaoio/vitepress-theme-december#readme",
   "bugs": "https://github.com/yaoyaoio/vitepress-theme-december/issues",
   "files": [
-    "lib"
+    "src"
   ],
   "dependencies": {
     "@mdit-vue/plugin-frontmatter": "^0.11.1",

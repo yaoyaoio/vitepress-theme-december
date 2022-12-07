@@ -1,3 +1,3 @@
-import {DecemberTheme} from "vitepress-theme-december";
+import {DecemberTheme} from "vitepress-theme-december-next";
 
 export default DecemberTheme

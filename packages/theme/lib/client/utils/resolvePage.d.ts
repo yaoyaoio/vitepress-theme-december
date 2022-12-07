@@ -1,4 +1,4 @@
-import type { PostData } from "../../types/post";
+import type { PostData } from "../types";
 export declare const formateDateString: (date: string) => string;
 export declare const resolveDate: (date: string, type: "year" | "month" | "day") => string;
 export interface PostDataWithDate {
