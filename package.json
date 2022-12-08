@@ -13,7 +13,7 @@
     "@types/node": "^18.11.10",
     "fast-glob": "^3.2.12",
     "fs-extra": "^10.0.0",
-    "tsconfig-vuepress": "^4.0.4",
+    "rimraf": "^3.0.2",
     "vitepress-theme-december-next": "workspace:*",
     "vitepress": "^1.0.0-alpha.30",
     "vue": "^3.2.45"
