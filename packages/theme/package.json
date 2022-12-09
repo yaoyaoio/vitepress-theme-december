@@ -1,6 +1,6 @@
 {
-  "name": "vitepress-theme-december-next",
-  "version": "0.0.1",
+  "name": "vitepress-theme-december",
+  "version": "1.0.0-alpha",
   "type": "module",
   "description": "vitepress-theme-december",
   "repository": "https://github.com/yaoyaoio/vitepress-theme-december.git",

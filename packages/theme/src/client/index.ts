@@ -1,6 +1,7 @@
 import {DecemberTheme} from './theme'
 
 export type {DecThemeConfig} from './config'
+
 export {DecemberTheme}
 
 
