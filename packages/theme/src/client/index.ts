@@ -1,8 +1,8 @@
-import {DecemberTheme} from './theme'
+import {DecemberTheme} from './theme.js'
 
-export type {DecThemeConfig} from './config'
+export type {DecThemeConfig} from './config.js'
 
 export {DecemberTheme}
 
 
-export {PostData,Frontmatter} from './types'
+export type {PostData,Frontmatter} from './types'

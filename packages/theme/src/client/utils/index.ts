@@ -1,1 +1,1 @@
-export * from "./resolvePage";
+export * from "./resolvePage.js";

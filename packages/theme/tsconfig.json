@@ -9,6 +9,7 @@
     "strict": true,
     "jsx": "preserve",
     "sourceMap": true,
+    "isolatedModules": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "declaration": true,
@@ -18,10 +19,10 @@
       "ESNext"
     ],
     "types": [
+      "node",
       "vite/client"
     ]
   },
-  "include": [
-    "."
-  ]
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "exclude": ["node_modules", "lib"]
 }

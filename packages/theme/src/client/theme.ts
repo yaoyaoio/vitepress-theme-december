@@ -5,7 +5,7 @@ import Layout from './components/Layout.vue'
 import Archives from "./components/Archives.vue";
 import Home from "./components/Home.vue";
 import './styles/custom.css'
-import {setPosts} from "./composables";
+import {setPosts} from "./composables/index.js";
 
 
 function setupPosts(ctx: EnhanceAppContext) {
