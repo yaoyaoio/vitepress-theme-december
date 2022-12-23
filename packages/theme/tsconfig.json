@@ -6,10 +6,22 @@
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "node",
-    "declaration": true,
+    "strict": true,
     "jsx": "preserve",
-    "lib": ["ESNext", "DOM"],
-    "types": ["vite/client"],
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "declaration": true,
+    "allowJs": true,
+    "noImplicitAny": true,
+    "lib": [
+      "ESNext"
+    ],
+    "types": [
+      "vite/client"
+    ]
   },
-  "include": ["."]
+  "include": [
+    "."
+  ]
 }
