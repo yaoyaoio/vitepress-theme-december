@@ -9,17 +9,16 @@
       </time>
     </div>
     <p class="describe">
-      {{ article.frontmatter.description}}
+      {{ article.frontmatter.description }}
     </p>
   </div>
 </template>
 
 <script lang="ts" setup>
 import {withBase} from 'vitepress'
-import {type PostData} from "../types";
 
 const props = defineProps<{
-  posts: PostData[],
+  posts: any,
 }>();
 
 </script>

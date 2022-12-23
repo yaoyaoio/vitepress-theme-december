@@ -1,14 +1,20 @@
 {
   "name": "vitepress-theme-december",
-  "version": "1.0.7-alpha",
+  "version": "1.0.10-alpha",
   "type": "module",
   "description": "vitepress-theme-december",
   "repository": "https://github.com/yaoyaoio/vitepress-theme-december.git",
   "author": "yaoyao <i@yaoyao.io>",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "./types/index.d.ts",
   "exports": {
-    ".": "./lib/index.js"
+    ".": {
+      "types": "./types/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
   },
   "keywords": [
     "theme",
@@ -18,14 +24,18 @@
   ],
   "license": "MIT",
   "scripts": {
-    "build": "tsc",
-    "clean": "rimraf lib *.tsbuildinfo",
-    "copy": "cpx \"src/**/*.{d.ts,vue,css}\" lib"
+    "build": "tsc -p .",
+    "clean": "rimraf dist *.tsbuildinfo",
+    "copy": "cpx \\\"src/**/*.{d.ts,vue,css}\\\" dist",
+    "pub": "npm publish --access public"
   },
   "homepage": "https://github.com/yaoyaoio/vitepress-theme-december#readme",
   "bugs": "https://github.com/yaoyaoio/vitepress-theme-december/issues",
   "files": [
-    "lib"
+    "dist",
+    "types",
+    "package.json",
+    "README.md"
   ],
   "dependencies": {
     "@mdit-vue/plugin-frontmatter": "^0.11.1",

@@ -1,4 +1,4 @@
-import type {PostData} from "../types";
+import type {PostData} from "../../types/index.js";
 
 
 export const formateDateString = (date: string): string => {

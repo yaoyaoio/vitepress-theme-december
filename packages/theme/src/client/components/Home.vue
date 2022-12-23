@@ -3,7 +3,7 @@
 </template>
 
 <script setup lang="ts">
-import {usePosts} from "../composables";
+import {usePosts} from "../composables/post.js";
 
 const posts = usePosts();
 import Page from "./Page.vue";
