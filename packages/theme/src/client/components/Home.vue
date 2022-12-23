@@ -3,9 +3,10 @@
 </template>
 
 <script setup lang="ts">
-import {usePosts} from "../composables/post.js";
+import {useData} from "vitepress";
 
-const posts = usePosts();
+const {theme} = useData();
+const {posts} = theme.value
 import Page from "./Page.vue";
 </script>
 

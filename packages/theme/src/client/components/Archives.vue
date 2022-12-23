@@ -16,12 +16,12 @@
 </template>
 
 <script lang="ts" setup>
-import {usePosts} from "../composables/post.js";
 import {getPostsByYear} from "../support/resolvePage.js";
 import {computed} from "vue";
-import {withBase} from "vitepress";
+import {withBase, useData} from "vitepress";
 
-const posts = usePosts()
+const {theme} = useData();
+const {posts} = theme.value
 const filteredPosts = computed(() => {
   return getPostsByYear(posts);
 });
